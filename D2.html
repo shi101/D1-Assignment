@@ -1,0 +1,38 @@
+
+<table border=1>
+<tr><th colspan="2">Registration Form </th></tr>
+<tr> <td> User Id=<td><input Id=ca>
+<tr> <td> Name=<td><input Id=cb>
+<tr> <td> Password <td><input type="Password" input Id=cc>
+<tr> <td> E.mail Id= <td><input Id=cd>
+<tr> <td> Country <select>
+<option value="India">India</option>
+<option value="India">India</option>
+<option value="India">India</option>
+<option value="India">India</option>
+</select>
+<tr> <td> Date of birth <td><input type="Date" input Id=ce>
+<tr> <td> Religion<td><input Id=cf>
+<tr> <td> <input type=button value=Register onclick=xyz()><br>
+<p Id=p1></p>
+
+
+<script>
+function xyz()
+{
+a=ca.value;
+b=cb.value;
+c=cc.value;
+d=cd.value;
+e=ce.value;
+f=cf.value;
+out="<table border=6>"
+out+="<tr> <th>User Id <td>"+a
+out+="<tr> <th>Name <td>"+b
+out+="<tr> <th>Password <td>"+c
+out+="<tr> <th>E.mail<td>"+d
+out+="<tr> <th>Date of birth <td>"+e
+out+="<tr> <th>Religion <td>"+f
+p1.innerHTML=out}
+</script>
+
