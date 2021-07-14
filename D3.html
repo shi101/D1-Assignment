@@ -1,50 +1,26 @@
-<!Doctype html>
-<html>
-<head>
-   <title>Calculation</title>
-</head>
-<body>
+<input id=t1 /> <br>
+<input id=t2 /> <br>
+<input type=button value=+ onclick=xyz(this) >
+<input type=button value=- onclick=xyz(this) >
+<input type=button value=* onclick=xyz(this) >
+<input type=button value=/ onclick=xyz(this) >
+<br>
+<div id=d1 > </div>
 <script>
-function myfun()
- {              var a=document.getElementById('number').value;
-             var b=document.getElementById('numbers').value;
-             document.getElementById('result').innerHTML=(a+b);
-              
-}
-
-function myfun2()
+function xyz(n)
 {
-             var a=document.getElementById('number').value;
-             var b=document.getElementById('numbers').value;
-             document.getElementById('result').innerHTML=(a-b);
+a=parseFloat(t1.value)
+b=parseFloat(t2.value)
+switch (
+c=a+b
+else if(n.value=="-")
+c=a-b
+else if(n.value=="*")
+c=a*b
+else
+c=a/b
+d1.innerHTML=c
 }
+</script><br>
+<br>
 
-function myfun3()
-{
-              var a=document.getElementById('number').value;
-             var b=document.getElementById('numbers').value;
-             document.getElementById('result').innerHTML=(a*b);
-}
-function myfun4()
-{
-            var a=document.getElementById('number').value;
-             var b=document.getElementById('numbers').value;
-             document.getElementById('result').innerHTML=(a/b);
-}
-</script>
-
- 1st number:
-<input type="number" value=""id="number"><br><br>
-
-2nd number:
-<input type="number" value=""id="numbers"><br><br>
-
-<input type="submit" value="Add" onclick="return myfun()">
-<input type="submit" value="sub" onclick="return myfun2()">
-<input type="submit" value="mul" onclick="return myfun3()">
-<input type="submit" value="div" onclick="return myfun4()"><br><br>
-
-<b>The result is:</b><br><br>
-<span id="result"></span>
-</body>
-</html>
